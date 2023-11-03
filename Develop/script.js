@@ -20,8 +20,12 @@ $(function () {
   }
   console.log($('.btn, .saveBtn'))
   $('.btn, .saveBtn').click(buttonPressed)
-//iterate through all elements with class row (google with jquery)
-  $(".row")  //
+// iterate through all elements with class row (google with jquery)
+// $(selector).each(function(index,element))
+// going to use this to compare number from id - hour"whatever" - will need
+// to split id into an interger and then use dayjs to log current time on header
+// and compare to id interger
+  // $(".row").each(function() //
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -31,6 +35,10 @@ $(function () {
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
+  // store locally with information on what hour it is to match
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+var now = dayjs().format('dddd, MMMM M, YYYY, hh:mm:ss A');
+$('header').append(now);
+console.log(now);
