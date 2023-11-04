@@ -38,7 +38,18 @@ $(function () {
   // store locally with information on what hour it is to match
   //
   // TODO: Add code to display the current date in the header of the page.
+  function updateTime() {
+    const now = dayjs();
+    const dateElement = $('#date');
+    const timeElement = $('#time');
+
+    dateElement.text(now.format('dddd, MMMM D, YYYY'));
+    timeElement.text(now.format('hh:mm:ss A'));
+  }
+
+  // Update the time every second
+  setInterval(updateTime, 1000);
 });
-var now = dayjs().format('dddd, MMMM M, YYYY, hh:mm:ss A');
-$('header').append(now);
-console.log(now);
+// var now = dayjs().format('dddd, MMMM M, YYYY, hh:mm:ss A');
+// $('header').append(now);
+// console.log(now);
