@@ -14,7 +14,7 @@ N/A
 
 Add anything that you have scheduled for your day at the allotted hour. As the day progresses, each time slot will change its highlighted color, notifying you what tasks are to be completed in the current and coming hours, as well as what should already have been completed. 
 
-![Screenshot of the schedule](./Develop/assets/images/Screenshot%202023-11-07%20at%208.21.11%20AM.pngassets/images/screenshot.png)
+![Screenshot of the schedule](./Develop/assets/images/Screenshot%202023-11-07%20at%208.21.11%20AM.png)
 
 ## Credits
 
