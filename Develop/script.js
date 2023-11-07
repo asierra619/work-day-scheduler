@@ -15,10 +15,10 @@ $(function () {
     // Attach a click event listener to the save button
     $('.saveBtn').on('click', function() {
       // Get the text from the input field
-      var textToSave = $('textarea[]').val();
+      var valueToSave = $('#textarea').val();
   
       // Save the text to local storage under a specific key
-      localStorage.setItem('textarea[]', textToSave);
+      localStorage.setItem('#textarea', valueToSave);
     });
   });
 
@@ -26,15 +26,16 @@ $(function () {
     // Attach a click event listener to the retrieve button
     $('.saveBtn').on('click', function() {
       // Retrieve the text from local storage under the 'savedText' key
-      var retrievedText = localStorage.getItem('textarea[]');
+      var valueToSave = localStorage.getItem('#textarea');
   
-      if (retrievedText !== null) {
+      if (valueToSave !== null) {
         // Display the retrieved text in the 'displayText' div
-        $('textarea[]').text(retrievedText);
+        $('#textarea').text(valueToSave)
       } else {
         // Notify if no text is found in local storage
-        $('textarea[]').text('No text found in local storage');
+        $('#textarea').text('No text found in local storage');
       }
+      localStorage.getItem(valueToSave);
     });
   });
   
