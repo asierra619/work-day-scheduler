@@ -18,9 +18,7 @@ Add anything that you have scheduled for your day at the allotted hour. As the d
 
 ## Credits
 
-Calendly Tutor - Alexis Gonzalez
-Ask BCS - Drew & Rudie
-Thanks to Cat Thompson for providing me with the proper code to highlight each time block appropriately.
+Calendly Tutor - Alexis Gonzalez<br />Ask BCS - Drew & Rudie<br />Thanks to Cat Thompson for providing me with the proper code to highlight each time block appropriately
 
 ## License
 
