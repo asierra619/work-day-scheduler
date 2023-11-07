@@ -11,21 +11,33 @@ $(function () {
   console.log($('.btn, .saveBtn'))
   $('.btn, .saveBtn').click(buttonPressed)
 
-  localStorage.setItem('area9', 'value9');
-  localStorage.setItem('area10', 'value10');
-  localStorage.setItem('area11', 'value11');
-  localStorage.setItem('area12', 'value12');
-  localStorage.setItem('area13', 'value13');
-  localStorage.setItem('area14', 'value14');
-  localStorage.setItem('area15', 'value15');
-  localStorage.setItem('area16', 'value16');
-  localStorage.setItem('area17', 'value17');
+  $(document).ready(function() {
+    // Attach a click event listener to the save button
+    $('.saveBtn').on('click', function() {
+      // Get the text from the input field
+      var textToSave = $('textarea[]').val();
+  
+      // Save the text to local storage under a specific key
+      localStorage.setItem('textarea[]', textToSave);
+    });
+  });
 
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  // store locally with information on what hour it is to match
-  //
+  $(document).ready(function() {
+    // Attach a click event listener to the retrieve button
+    $('.saveBtn').on('click', function() {
+      // Retrieve the text from local storage under the 'savedText' key
+      var retrievedText = localStorage.getItem('textarea[]');
+  
+      if (retrievedText !== null) {
+        // Display the retrieved text in the 'displayText' div
+        $('textarea[]').text(retrievedText);
+      } else {
+        // Notify if no text is found in local storage
+        $('textarea[]').text('No text found in local storage');
+      }
+    });
+  });
+  
   // Display the current date and time
   function updateTime() {
     const now = dayjs();
