@@ -1,19 +1,27 @@
 # Work Day Scheduler Starter Code
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours of 9am to 5pm
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+## Description
+
+The building of this scheduler is to help offer more organization to your day to day schedule, especially if a user typically has difficulty in alotting proper time to complete all necessary tasks for a given day. Building this project has helped me with my JQuery, dayjs, and localstorage coding skills, despite running into a local issue on my own device. 
+
+The problem my project solves is that of being unorganized or having little to no guidance to get any and all tasks, whether they are miniscule or grand. I've learned that there are many issues outside of the code itself, in doing this project, and that its doesn't hurt to ask more questions to realize that you've already found your solution, even if its not visible to you. 
+
+## Installation
+
+N/A
+
+## Usage
+
+Add anything that you have scheduled for your day at the allotted hour. As the day progresses, each time slot will change its highlighted color, notifying you what tasks are to be completed in the current and coming hours, as well as what should already have been completed. 
+
+![Screenshot of the schedule](./Develop/assets/images/Screenshot%202023-11-07%20at%208.21.11%20AM.pngassets/images/screenshot.png)
+
+## Credits
 
 Calendly Tutor - Alexis Gonzalez
-Ask BCS - Drew
+Ask BCS - Drew & Rudie
 Thanks to Cat Thompson for providing me with the proper code to highlight each time block appropriately.
+
+## License
+
+N/A
