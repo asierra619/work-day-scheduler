@@ -15,4 +15,5 @@ WHEN I refresh the page
 THEN the saved events persist
 
 Calendly Tutor - Alexis Gonzalez
-Ask BCS - Drew, 
+Ask BCS - Drew
+Thanks to Cat Thompson for providing me with the proper code to highlight each time block appropriately.

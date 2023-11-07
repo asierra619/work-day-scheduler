@@ -8,7 +8,7 @@ $(function () {
   // function? How can DOM traversal be used to get the "hour-x" id of the
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
-  function buttonPressed (){
+  function buttonPressed(){
     console.log("Clicked!")
     var key = $(this).parent().attr("id")
     var valueToSave = $(this).siblings("textarea").val()
@@ -25,7 +25,8 @@ $(function () {
 // going to use this to compare number from id - hour"whatever" - will need
 // to split id into an interger and then use dayjs to log current time on header
 // and compare to id interger
-  // $(".row").each(function() //
+
+  // $(".time-block").each(function()  //
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -47,9 +48,28 @@ $(function () {
     timeElement.text(now.format('hh:mm:ss A'));
   }
 
+  // Compare current hour to time block - adjusting class / highlighted color accordingly
+  let currentHour = new Date().getHours();
+  let timeBlocks = document.querySelectorAll(".time-block");
+
+  function highlightCurrentTimeBlock() {
+  timeBlocks.forEach((block, index) => {
+    let blockHour = 9 + index;
+
+    block.classList.remove('past', 'present', 'future');
+
+    if (blockHour < currentHour) {
+      block.classList.add('past');
+    } else if (blockHour === currentHour) {
+      block.classList.add('present');
+    } else {
+      block.classList.add('future');
+    }
+  });
+  }
+
+  highlightCurrentTimeBlock();
+
   // Update the time every second
   setInterval(updateTime, 1000);
 });
-// var now = dayjs().format('dddd, MMMM M, YYYY, hh:mm:ss A');
-// $('header').append(now);
-// console.log(now);
