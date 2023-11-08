@@ -56,6 +56,7 @@ $(function () {
 
   function highlightCurrentTimeBlock() {
     timeBlocks.forEach((block, index) => {
+      block.children[1].value = localStorage.getItem(block.id);
       let blockHour = 9 + index;
       block.classList.remove('past', 'present', 'future');
       
@@ -69,7 +70,5 @@ $(function () {
     });
   }
   highlightCurrentTimeBlock();
-
-
 
 });
