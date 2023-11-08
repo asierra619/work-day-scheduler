@@ -18,7 +18,7 @@ Add anything that you have scheduled for your day at the allotted hour. As the d
 
 ## Credits
 
-Calendly Tutor - Alexis Gonzalez<br />Ask BCS - Drew & Rudie<br />Thanks to Cat Thompson for providing me with the proper code to highlight each time block appropriately
+Nirav helped me with numerous code fixes and general information, which is always much appreciated<br />Calendly Tutor - Alexis Gonzalez<br />Ask BCS - Drew & Rudie<br />Thanks to Cat Thompson for providing me with the proper code to highlight each time block appropriately<br />ChatGPT for general pseudo code
 
 ## License
 
